@@ -80,8 +80,7 @@ if uploaded_file is not None:
     st.write("<h3 style='text-align: center; color: #0073e6;'>Data yang diupload</h3>", unsafe_allow_html=True)
     st.dataframe(input_data)
 
-    model_directory = r'C:\Users\Lenovo\Documents\Kuliah - UAJY\Semester V - 2024-2025\Pembelajaran mesin dan Pembelajaran Mendalam - A\Modul 03\Tugas3_A_12071'
-    model_path = os.path.join(model_directory, r'SVR_IPK_model.pkl')
+    model_path = 'SVR_IPK_model.pkl'
 
     if os.path.exists(model_path):
         with open(model_path, 'rb') as f:
